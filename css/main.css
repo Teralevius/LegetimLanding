@@ -1,0 +1,534 @@
+.formFon{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color:rgba(0,0,0,0.8) ;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.formwindow{
+    width: 50%;
+}
+header{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    padding-top: 30px;
+    padding-bottom: 55px;
+
+}
+.firstPart{
+    margin-top: 15px;
+    display: flex;
+}
+.secondPart{
+    margin-bottom: 15px;
+    display: flex;
+}
+.mobilePanelHeader{
+    display: none;
+    font-size: 25px;
+}
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    font-size: 16px;
+}
+.contactsFirst{
+    display: flex;
+    flex-direction: column;
+}
+.contactsSecond{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contactsFirstEnvelope{
+    display: flex;
+    margin-top: 10px;
+}
+.contactsFirstPhone{
+    display: flex;
+}
+.contactsSecondHome{
+    display: flex;
+}
+.contactsSecondSkype{
+    margin-top: 10px;
+    display: flex;
+}
+
+.buttonHeader{
+    height: 60px;
+    background-color:#025155;
+    color:#ffffff;
+    max-width: 360px;
+    text-align: center;
+    border-style: none;
+    width: 100%;
+}
+.adress{
+    padding-left: 0px;
+}
+.time{
+    padding-top: 18px;
+    padding-left: 70px;
+}
+.timeWork{
+    padding-top: 18px;
+
+}
+
+.headerRight{
+    font-size: 16px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+
+    background: url("../image/backImageMain.png") no-repeat center top;
+    background-position: 0 -210px;
+    padding-top:266px ;
+}
+.mainHeadPart{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 245px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+}
+.firstHeadText{
+    font-size: 55px;
+}
+.secondHeadtext{
+    padding-top: 25px;
+    line-height: 45px
+}
+.skidBlock{
+
+    margin-top: 60px;
+    background: url("../image/skidFon.png") no-repeat center top;
+    height: 540px;
+
+}
+
+.skidText{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 65px;
+    padding-left: 67px;
+    float: left;
+}
+.skidProcent{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    padding-left: 67px;
+    padding-top: 34px;
+    margin-top: 0;
+    color: #ffffff;
+    padding-right: 67px;
+
+}
+.skidForm{
+    background-color: #00575b;
+    height: 361px;
+    padding-left: 67px;
+    padding-right: 67px;
+}
+.skidNameInput{
+    margin-top: 60px;
+    height:60px;
+}
+.skidPhoneInput{
+    margin-top: 26px;
+    height: 60px;
+}
+.skidButton{
+    width: 100%;
+    height: 60px;
+    background-color:#025155;
+    color:#ffffff;
+    text-align: center;
+    border-style: none;
+    margin-top: 30px;
+
+
+}
+.howWork{
+    background: url("../image/плажка подтекст.png") no-repeat center top;
+    text-align: center;
+    height: 90px;
+    color: #ffffff;
+    padding-top: 3px;
+}
+
+.girlHowWork{
+
+
+}
+.formHowWork{
+    height: 600px;
+    background-color:#025155;
+    padding-top: 3px;
+    padding-bottom: 3px;}
+.form{
+    border: 2px solid #ffffff;
+    height: 560px;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.map{
+    width: 100%;
+
+
+}
+footer{
+
+    width: 100%;
+    background: url("../image/фон под меню копия.png") no-repeat center top;
+}
+.footerContacts{
+
+}
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.form-control{
+    border-radius: 0px;
+}
+.getSkid{
+    margin-top: 25px;
+    text-align: center;
+}
+.getSkid h1{
+    color: #025155;
+    font-size: 30px;
+    display: inline;
+    font-weight: 700;
+    text-align: center;
+}
+.getSkid span{
+    display: inline;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.why {
+    border-bottom: solid 4px;
+    border-bottom-color: #025155;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.headerPanel{
+    display: flex;
+    justify-content: space-around;
+}
+.link{
+    text-decoration: underline;
+    color:  #025155;
+}
+.why h1{
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+}
+.listReasons{
+    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+}
+.listReasons li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row ;
+}
+.resonsTextUl{
+    display: inline-block;
+}
+.resonsTextUl h1{
+    margin-top: 10px;
+    font-weight: 700;
+    color:#025155 ;
+}
+.resonsTextUl span{
+    font-size: 15px;
+    display: flex}
+
+.imageResons{
+    margin-left: auto;
+    margin-right: auto;
+}
+.imageDivReasons{
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    align-items: center;
+    margin-right: 25px;
+}
+.galst{
+    margin-left: 22px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+.workList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workList h1{
+
+    font-size: 108px;
+    font-weight: 600;
+}
+.workList img {
+    margin-left: 25px;
+    height: 98px;
+}
+.workList span{
+    font-weight: 600;
+    font-size: 15px;
+}
+.howWorkHead{
+    line-height: 54px;
+    font-size: 40px
+;
+    text-align: center;
+    color: #ffffff;
+}
+.howWorkForm{
+    padding-left: 49px;
+    padding-right: 49px;
+    padding-top: 4px;
+     }
+.nameHowWork{
+    height: 60px;
+    margin-top: 42px;
+    margin-bottom: 30px;
+}
+.phoneHowWork{
+    height: 60px;
+
+}
+.howWorkAnnotation{
+    text-align: center;
+    font-size: 20px;
+    color:#ffffff;
+    display:block;
+}
+.workUL{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.workListImgH1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liHowWork{
+    margin-bottom: 90px;
+    margin-top: 40px;
+}
+.footerLogo{
+    margin-top: 105px;
+}
+.footerContacts{
+    margin-top: 97px;
+    display: flex;
+}
+.footerTextBlock{
+    display: flex;
+    flex-direction: column;
+    color:  #ffffff;
+}
+/*.footerTextBlock.one{*/
+    /*margin-left: 5%;*/
+    /*width: 30%;*/
+ /*}*/
+/*.footerTextBlock.two{*/
+    /*width: 15%;*/
+    /*margin-left: 5%;*/
+/*}*/
+/*.footerTextBlock.three{*/
+    /*width: 20%;*/
+    /*margin-left: 5%;*/
+/*}*/
+.footerTextBlock.one{
+    flex-grow: 1;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footerTextBlock.two,
+.footerTextBlock.three{
+    flex-grow: 1;
+    align-items: flex-start;
+    text-align: left;
+}
+.footerTextBlock .fa{
+    padding: 0px;
+}
+.item img{
+    height: 362px !important;
+    width: 360px;
+}
+.item{
+    margin: 15px !important;
+}
+.owl-carousel {
+    margin-top: 25px;
+}
+.annotationMainForm{
+    color: #ffffff;
+    margin-top: 15px;
+    display: flex;
+
+}
+@media screen and (max-width: 1200px) {
+    .girl{
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .howWorkForm{
+        font-size: 25px;
+    }
+    .formskidbutton{
+        font-size: 15px;
+    }
+    .headerPanel{
+        flex-direction: column;
+    }
+    .mobilePanelHeader{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .listReasons li{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .resonsTextUl{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        background: none;
+        padding-top: 10px}
+    .mainHeadPart{
+        height: 180px;
+        font-size: 25px;
+    }
+    .skidBlock{
+        height: auto;
+    }
+    .firstHeadText{
+        font-size: 25px;
+        margin: 0 10%;
+        font-weight: bold;
+    }
+    .secondHeadtext{
+        font-size: 20px;
+        margin: 0 10%;
+        font-weight: bold;
+    }
+    .skidText{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .skidProcent{
+        font-size: 70px !important;
+    }
+    .footerLogo{
+        margin-left: calc(50% - 90px);
+    }
+    .footerContacts{
+        display: none;
+    }
+    .workUL{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .skidNameInput{
+        margin-top: 30px;
+    }
+    .form-group{
+        display: grid;
+    }
+    .liHowWork{
+        margin-bottom: 10px;
+    }
+    .resonsTextUl h1{
+        font-size: 20px;
+    }
+    .logo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: calc(50% - 80px);
+        padding: 0px;
+    }
+    .contacts{
+        display: none;
+    }
+    .headerRight{
+        padding: 0px;
+    }
+    .headerRight .buttonHeader{
+        width: 100%;
+        max-width: none;
+    }
+    .headerRight .adressText,.timeWork{
+        display: none;
+    }
+    .headerRight .fa{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .howWork{
+        margin-bottom: 0px !important;
+
+    }
+    .howWork h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 427px ){
+    .howWorkHead{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
