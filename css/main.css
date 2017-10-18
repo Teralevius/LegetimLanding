@@ -167,7 +167,7 @@ main{
 
 }
 .howWork{
-    background: url("../image/плажка подтекст.png") no-repeat center top;
+    background: url("../image/plag.png") no-repeat center top;
     text-align: center;
     height: 90px;
     color: #ffffff;
@@ -181,14 +181,17 @@ main{
 .formHowWork{
     height: 600px;
     background-color:#025155;
-    padding-top: 3px;
-    padding-bottom: 3px;}
+    padding: 3px 15px;
+}
 .form{
     border: 2px solid #ffffff;
     height: 560px;
     width: 100%;
     margin-top: 18px;
     margin-bottom: 18px;
+}
+.close{
+    font-size: 20px;
 }
 .map{
     width: 100%;
@@ -198,7 +201,7 @@ main{
 footer{
 
     width: 100%;
-    background: url("../image/фон под меню копия.png") no-repeat center top;
+    background: url("../image/menufon.png") no-repeat center top;
 }
 .footerContacts{
 
@@ -415,7 +418,11 @@ h1{
     }
 
 }
-
+@media screen and(min-width: 1024px){
+     #contactText{
+         display: none !important;
+     }
+}
 @media screen and (max-width: 1023px) {
     .howWorkForm{
         font-size: 25px;
@@ -429,6 +436,11 @@ h1{
     .mobilePanelHeader{
         display: flex;
         justify-content: space-around;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .contactPanel{
+        justify-content: center;
         margin-top: 15px;
         margin-bottom: 15px;
     }

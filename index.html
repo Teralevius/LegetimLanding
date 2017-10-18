@@ -15,28 +15,30 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </head>
 <body>
    <header>
        <div class="mobilePanelHeader">
-           <i class="fa fa-phone"></i><i class="fa fa-home"></i><i class="fa fa-envelope"></i><i
-               class="fa fa-skype"></i><i class="fa fa-map-marker"></i><i class="fa fa-clock-o"></i>
+           <i class="fa fa-phone" id="mobilePhone"></i><i class="fa fa-home" id="mobileHome"></i><i class="fa fa-envelope"id="mobileEnvelope"></i><i
+               class="fa fa-skype" id="mobileSkype"></i><i class="fa fa-map-marker" id="mobileMarker"></i><i class="fa fa-clock-o" id="mobileClock"></i>
        </div>
+       <div class="contactPanel"><span id="contactText"></span></div>
        <div class="container">
            <div class="row headerPanel">
                <div class="col-lg-2 logo">
-                   <img  src="image/логотип.png">
+                   <img  src="image/logo1.png">
                </div>
                <div class="col-lg-6 contacts">
                    <div class="contactsFirst">
                        <div class="contactsFirstPhone">
                            <i class="fa fa-phone  " style="margin-right: 10px" aria-hidden="true"></i>
-                           <span>+375(44)554 41 06</span>
+                           <span id="phone">+375(44)554 41 06</span>
                        </div>
 
                        <div class="contactsFirstEnvelope">
                            <i class="fa fa-envelope " style="margin-right: 10px" aria-hidden="true"></i>
-                           <span>info@trastaktiv.by</span>
+                           <span id="mail">info@trastaktiv.by</span>
                        </div>
 
                    </div>
@@ -44,12 +46,12 @@
                    <div class="contactsSecond">
                        <div class="contactsSecondHome">
                            <i class="fa fa-home " aria-hidden="true" style="margin-right: 10px"></i>
-                           <span>+375(17)207 67 04</span>
+                           <span id="homephone">+375(17)207 67 04</span>
                        </div>
 
                        <div class="contactsSecondSkype">
                            <i class="fa fa-skype " aria-hidden="true" style="margin-right: 10px"></i>
-                           <span>trastaktiv</span>
+                           <span id="skype">trastaktiv</span>
                        </div>
 
                    </div>
@@ -58,7 +60,7 @@
                <div class="headerRight ">
                    <div class="firstPart">
                        <i class="fa fa-map-marker adress " aria-hidden="true" style="margin-right: 10px"></i>
-                       <span class="adressText">г.Минск, ул.Гусовского, 2А,комната 5-5</span>
+                       <span class="adressText" id="adress">г.Минск, ул.Гусовского, 2А,комната 5-5</span>
                    </div>
 
                    <button class="buttonHeader">Получить бесплатную консультацию</button>
@@ -72,7 +74,7 @@
                    </script>
                    <div class="secondPart">
                        <i class="fa fa-clock-o time" aria-hidden="true" style="margin-right: 10px"></i>
-                       <span class="timeWork">Режим: работы: c 8:30 До 17:00</span>
+                       <span class="timeWork" id="time">Режим: работы: c 8:30 До 17:00</span>
                    </div>
 
                </div>
@@ -82,7 +84,8 @@
            <div class="formwindow">
                        <div class="formHowWork">
                            <div class="form">
-                               <h1 class="howWorkHead howWorkForm">Оставьте заявку,<br> получите бесплатную<br> консультацию</h1>
+                               <i class="fa fa-times close" aria-hidden="true"></i>
+                                   <h1 class="howWorkHead howWorkForm">Оставьте заявку,<br> получите бесплатную<br> консультацию</h1>
                                <div class="form-group howWorkForm">
                                    <input type="text" class="nameHowWork form-control" placeholder="Введите имя">
                                    <input type="text" class="phoneHowWork form-control" placeholder="Введите телефон">
@@ -126,7 +129,7 @@
                <ul class="listReasons">
                    <li>
                        <div class="imageDivReasons">
-                           <img src="image/цель.png" class="imageResons" alt="">
+                           <img src="image/target.png" class="imageResons" alt="">
                        </div>
 
                        <div class="resonsTextUl" >
@@ -136,7 +139,7 @@
                        </li>
                    <li>
                        <div class="imageDivReasons">
-                           <img src="image/галстук.png" class="imageResons galst" alt="">
+                           <img src="image/gals.png" class="imageResons galst" alt="">
                        </div>
                        <div class="resonsTextUl" >
                            <h1>Узкая специализация юристов</h1>
@@ -145,7 +148,7 @@
                        </li>
                    <li>
                        <div class="imageDivReasons">
-                           <img src="image/календарь.png"  class="imageResons"  alt="">
+                           <img src="image/calendar.png" class="imageResons" alt="">
                        </div>
 
                        <div class="resonsTextUl">
@@ -174,77 +177,77 @@
                    <div id="owl-demo" class="owl-carousel owl-theme" style="text-align: center">
 
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
                        <div class="item">
-                           <img src="image/иконки1.png" alt="Owl Image">
+                           <img src="image/icon2.png" alt="Owl Image">
                            <h4>Бугаев О.А</h4>
                            <h5>юрист</h5>
                        </div>
@@ -265,7 +268,7 @@
                        <li class="workList">
                            <div class="workListImgH1">
                                <h1 class="workNumber">1</h1>
-                               <img src="image/иконки4.png" alt="">
+                               <img src="image/icon4.png" alt="">
                            </div>
 
                            <span>Вы оставляете заявку</span>
@@ -273,20 +276,20 @@
                        <li class="workList">
                            <div class="workListImgH1" >
                                <h1 class="workNumber">2</h1>
-                               <img src="image/иконки3.png" alt="">
+                               <img src="image/icon3.png" alt="">
                            </div>
                            <span>Мы связываемся с Вами</span>
                        </li>
                        <li class="workList"><div class="workListImgH1">
                            <h1 class="workNumber">3</h1>
-                           <img src="image/иконки1.png" alt="">
+                           <img src="image/icon2.png" alt="">
                        </div>
 
                            <span>Заключаем договора</span>
                        </li>
                        <li class="workList"><div class="workListImgH1">
                            <h1 class="workNumber">4</h1>
-                           <img src="image/иконки.png" alt="">
+                           <img src="image/icon1.png" alt="">
                        </div>
 
                            <span>Осуществляем обслуживание</span>
@@ -298,7 +301,7 @@
        <div class="container">
            <div class="row">
                <div class="col-lg-6  girlHowWork">
-                   <img src="image/изображение%20девушки.png" class="girl">
+                   <img src="image/girl.png" class="girl">
                </div>
                <div class="col-md-12 col-lg-6 formHowWork">
                    <div class="form">
@@ -317,7 +320,7 @@
            <h1>Где мы находимся</h1>
        </div>
        <div >
-           <img class="map" src="image/Прямоугольник%2022.png">
+
        </div>
    </main>
    <footer>
